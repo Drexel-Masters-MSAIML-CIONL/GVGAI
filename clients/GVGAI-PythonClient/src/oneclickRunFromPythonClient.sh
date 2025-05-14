@@ -5,6 +5,10 @@ server_dir=../../..
 agent_name=sampleRandom.Agent
 sh_dir=utils
 
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+cd $SCRIPT_DIR
+
 
 DIRECTORY='./logs'
 if [ ! -d "$DIRECTORY" ]; then

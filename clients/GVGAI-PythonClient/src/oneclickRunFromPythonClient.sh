@@ -1,7 +1,7 @@
 #!/bin/bash
 
-game_id=0
-server_dir=../../..
+game_id=75
+server_dir=/workspace
 agent_name=sampleRandom.Agent
 sh_dir=utils
 

@@ -47,6 +47,8 @@ class IOSocket:
 
     def writeToServer(self, messageId, line, log):
         msg = str(messageId) + self.TOKEN_SEP + line + "\n"
+        # print('Write message to server')
+        # print(msg)
         try:
             if CompetitionParameters.OS_WIN:
                 self.socket.send(bytes(msg, 'utf8'))
